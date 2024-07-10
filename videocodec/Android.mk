@@ -31,6 +31,7 @@ endif
 # only 3.4 kernel
 ifeq ($(filter-out 3.4, $(TARGET_LINUX_KERNEL_VERSION)),)
 LOCAL_CFLAGS += -DUSE_EXYNOS_MEDIA_EXT
+LOCAL_CFLAGS += -Wno-enum-conversion
 endif
 
 # since 3.10 kernel
