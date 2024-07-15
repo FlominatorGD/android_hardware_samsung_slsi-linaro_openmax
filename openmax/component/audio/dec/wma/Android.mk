@@ -29,6 +29,7 @@ LOCAL_ADDITIONAL_DEPENDENCIES := \
 
 LOCAL_C_INCLUDES := \
     $(TARGET_OUT_INTERMEDIATES)/KERNEL_OBJ/usr/include \
+        $(EXYNOS_OMX_INC)/khronos \
 	$(EXYNOS_OMX_INC)/exynos \
 	$(EXYNOS_OMX_TOP)/osal \
 	$(EXYNOS_OMX_TOP)/core \

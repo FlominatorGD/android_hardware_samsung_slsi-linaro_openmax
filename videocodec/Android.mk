@@ -8,7 +8,8 @@ LOCAL_SRC_FILES := \
 	dec/ExynosVideoDecoder.c \
 	enc/ExynosVideoEncoder.c
 
-LOCAL_C_INCLUDES :=     $(TARGET_OUT_INTERMEDIATES)/KERNEL_OBJ/usr/include    $(TARGET_OUT_INTERMEDIATES)/KERNEL_OBJ/usr/include\
+LOCAL_C_INCLUDES := \
+        $(TARGET_OUT_INTERMEDIATES)/KERNEL_OBJ/usr/include \
 	$(LOCAL_PATH)/include \
 	$(LOCAL_PATH)/osal/include \
 	$(TOP)/hardware/samsung_slsi/exynos/include \
