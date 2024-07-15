@@ -24,7 +24,11 @@ LOCAL_STATIC_LIBRARIES := libExynosOMX_Adec libExynosOMX_OSAL libExynosOMX_ABase
 LOCAL_SHARED_LIBRARIES := libc libdl libcutils libutils libui \
 	libExynosOMX_Resourcemanager libffmpegapi\
 
-LOCAL_C_INCLUDES := $(EXYNOS_OMX_INC)/khronos \
+LOCAL_ADDITIONAL_DEPENDENCIES := \
+	$(TARGET_OUT_INTERMEDIATES)/KERNEL_OBJ/usr
+
+LOCAL_C_INCLUDES := \
+    $(TARGET_OUT_INTERMEDIATES)/KERNEL_OBJ/usr/include \
 	$(EXYNOS_OMX_INC)/exynos \
 	$(EXYNOS_OMX_TOP)/osal \
 	$(EXYNOS_OMX_TOP)/core \

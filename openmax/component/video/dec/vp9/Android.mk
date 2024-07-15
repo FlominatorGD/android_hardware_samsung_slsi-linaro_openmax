@@ -57,7 +57,7 @@ LOCAL_SHARED_LIBRARIES := \
     libcsc \
     libExynosOMX_Resourcemanager \
 
-LOCAL_C_INCLUDES := \
+LOCAL_C_INCLUDES :=     $(TARGET_OUT_INTERMEDIATES)/KERNEL_OBJ/usr/include    $(TARGET_OUT_INTERMEDIATES)/KERNEL_OBJ/usr/include\
 	$(EXYNOS_OMX_INC)/exynos \
 	$(EXYNOS_OMX_TOP)/osal \
 	$(EXYNOS_OMX_TOP)/core \
